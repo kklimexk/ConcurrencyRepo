@@ -5,7 +5,7 @@ import java.util.concurrent.locks.ReentrantLock;
 
 public class Buffer {
 
-	private static final int DEFAULT_BUFFER_SIZE = 8;
+	private static final int DEFAULT_BUFFER_SIZE = 10;
 	private int bufferSize = DEFAULT_BUFFER_SIZE;
 	private int freeSlots = bufferSize;
 
