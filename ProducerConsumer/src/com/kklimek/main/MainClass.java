@@ -19,7 +19,7 @@ public class MainClass {
 		for (int i = 0; i < numOfConsumers; ++i)
 			exec.execute(new Consumer(buffer));
 		try {
-			TimeUnit.SECONDS.sleep(5);
+			TimeUnit.SECONDS.sleep(secondsTime);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
@@ -27,6 +27,6 @@ public class MainClass {
 	}
 
 	public static void main(String[] args) {
-		createAndStartThreads(3, 3, 5);
+		createAndStartThreads(3, 3, 10);
 	}
 }
